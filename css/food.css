@@ -1,0 +1,327 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior:smooth;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/* head style start*/
+
+header{
+    height: 100vh;
+    background: url('./img/home_bg.jpeg') center center/cover no-repeat;
+}
+header::before{
+    content: """";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 1, 0.329);
+}
+header *{
+    z-index:10;
+}
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ #navbar img{
+    width: 80px;
+ }
+ #navbar ul{
+    display: flex;
+    margin-right: 80px;
+ }
+ #navbar ul li a {
+padding: 40px;
+padding-bottom: 10px;
+color: aliceblue;
+font-weight: 600;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ }
+ #navbar ul li  :hover
+ {
+    border-bottom: 1px solid yellow;
+ }
+ #content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 75vh;
+ }
+ #content h1{
+    font-size: 50px;
+    color: rgb(228, 206, 206);
+ }
+ #content p {
+    margin: 20px 0 40px;
+    color:rgb(228, 206, 206);
+ }
+ .primary-test{
+color: darkolivegreen;
+ }
+#content a{
+    color: white;
+    border: 1px solid white;
+    padding: 10px 30px ;
+    border-radius: 15px;
+}
+#content a:hover{
+    background: yellow;
+    color: black;
+}
+
+/*////////////////about//////////////////////////////////////////////*/
+
+.container{
+    width: 750px;
+    margin: auto;
+}
+#about {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: wheat;
+}
+#about {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+#about h2{
+    font-size: 40px;
+    color: green;
+    margin-bottom: 20px;
+}
+#about .container p{
+font-size: 15px;
+color: red;
+font-weight: 600;
+margin-bottom: 4rem;
+}
+#about .about-content{
+    display: flex;
+    justify-content: space-between;
+}
+#about .about-content img{
+    width: 400px;
+    opacity: 0.9;
+}
+#about .about-content img:hover{
+    opacity: 1;
+}
+#about .about-content p{
+    color: brown;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+#about .about-content a{
+    color: white;
+    background: gray;
+    border-bottom: 3px solid yellow;
+    padding: 10px 30px ;
+    border-radius: 15px;
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+}
+#about .about-content a:hover{
+    background: yellow;
+    color: gray;
+}
+
+/*-------------------------offers------------------------------------------//*/
+.primary-text{
+    color: yellow;
+}
+#offers{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    background: url(./img/offer-background.jpg) center center/cover fixed;
+}
+#offers{
+    text-align: center;
+    margin-bottom: 4rem;
+}
+#offers h2{
+    color: yellow;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#offers p{
+    color: aliceblue;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+#offers .offers-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: aliceblue;
+}
+#offers .offers-item img{
+    width: 200px;
+    opacity: 0.9;
+}
+#offers .offers-item img:hover{
+    opacity: 1;
+}
+#offers .offers-item span{
+    font-size: 25px;
+    font-weight: 500;
+    margin-left: 5px;
+}
+/*--------------------------menu--------------------------------------------*/
+#menue{
+    background: url(./img/daytime_bg.jpeg) center center/cover  no-repeat;
+}
+#menue .title {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+#menue .title h3{
+    font-weight: 600;
+    color: darkgreen;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 50px;
+}
+#menue .title p{
+    margin-top: 2rem;
+    color: gray;
+}
+#menue .menue-items{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+#menue .menue-items img{
+    width: 80px;
+    border-radius: 50%;
+    margin-right: 15px;
+    opacity: 0.8;
+}
+#menue .menue-items img:hover{
+opacity: 1;
+}
+#menue .menue-items .menue-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+}
+#menue .menue-items .menue-item h3{
+    color: #383848;
+    border-bottom: 1px dashed #c2bdbd;
+   padding-bottom: 10px;
+   position: relative;
+}
+#menue .menue-items .menue-item .primary-text{
+position: absolute;
+top: 0;
+right: 0;
+}
+#menue .menue-items .menue-item p{
+    margin-bottom: 10px;
+}
+.btn{
+    display: block;
+    margin: auto;
+    background: #383848;
+    color: rgb(240, 248, 255);
+    border: 2PX solid wheat;
+    padding: 8px;
+    cursor:pointer;
+    border-radius: 15px;
+}
+.btn:hover{
+ background: yellow;
+ color: gray;
+}
+/*---------------------------------------------------------8*/
+#daytime{
+    text-align: center;
+    background: url(./img/offer-background.jpg) center center /cover fixed no-repeat;
+}
+.day-items{
+    align-items: center;
+    display: flex;
+    justify-content:space-evenly;
+    height: 40vh;
+}
+.day-items p,h3{
+    color: gray;
+}
+
+.day-items img{
+    opacity: 0.5;
+}
+.day-items img:hover{
+    opacity: 1;
+}
+/*-------------------------------------------*/
+#gallary{
+    background: url(./img/offer-background.jpg) center center/cover fixed no-repeat;
+}
+.gallary-imgg img{
+width: 280px;
+height: 200px;
+border-radius: 15px;
+margin: 20px;
+opacity: 0.8;
+}
+.gallary-imgg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.gallary-imgg img:hover{
+    opacity: 1;
+}
+footer{
+    text-align: center;
+    background-color: #383848;
+    color: aliceblue;
+}
+footer a{
+    color: yellow;
+}
+/*----------------------contact----------------------------------*/
+#Contact{
+background:white;
+}
+
+.contact-info h3{
+margin: 10px;
+font-weight: 600;
+color: black;
+font-size: x-large;
+}
+.contact-info p i{
+    margin: 10px;
+    color: chocolate;
+}
+.contact-info p{
+    font-size: larger;
+}
+.contact-info a i{
+background-color:white;
+padding: 15px;
+border-radius: 50%;
+color:black;
+}
+.contact-info a i:hover{
+    color: chocolate;
+}
